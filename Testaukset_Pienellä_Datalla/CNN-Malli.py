@@ -20,7 +20,7 @@ def load_data(image_dir):
         # Map subfolder name to corresponding letter label
         letter_label = chr(int(label) + 64)  # Assuming letters A-Z correspond to subfolders 1-26
         for filename in os.listdir(label_dir):
-            if image_count == 5000:  # Limiting to 30 images per class
+            if image_count == 30:  # Limiting to 30 images per class
                 break
             image_path = os.path.join(label_dir, filename)
             # Load image
